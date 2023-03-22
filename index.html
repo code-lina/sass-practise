@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patte Couture Collars</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4ad042a6a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	 <section id="section-1"> 
+		 <div class="container">
+			 <header>
+				 <img src="assets/logo.png" width="150px" height="150">
+				 <nav id="main-menu">
+					 <ul>
+						 <li class="active"><a href="#">Home</a></li>
+						 <li><a href="#">Collars</a></li>
+						 <li><a href="#">About</a></li>
+						 <li><a href="#">Contact</a></li>
+					 </un>
+				 </nav>
+
+				 <a href="#" id="menu-icon" onclick="toggleMenu();" style="display: none;"><i class="fa-solid fa-bars"></i>
+				</a> <!--WHY IS THIS <a> LINK? WHAT FOR IS #?--> 
+				 
+
+			 </header>
+				 <div id="main-heading-and-cta">
+					 <h1>Patte Couture pet collars are stylish, unique and 100% handcrafted products.</h1>
+					 <a href="#" class="big-button">Shop now!</a>
+				 </div>
+		 </div>
+	 </section>
+	 
+	 <section id="section-2"> 
+		 <div class="container">
+			 <div class="title-box">
+				 <h2>Our collars</h2>
+				 <div class="line"></div>
+				 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 
+			 </div>
+			 <div class="blurb-row">
+			 
+				 <div class="blurb">
+					 <img src="assets/paw.png" width="100px" height="100">
+					 <h3>Classic collars</h3>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+				 
+				 <div class="blurb">
+					 <img src="assets/paw.png" width="100px" height="100">
+					 <h3>Martingale collars</h3>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+				 
+				 <div class="blurb">
+					 <img src="assets/paw.png" width="100px" height="100">
+					 <h3>Wide collars</h3>
+					 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				 </div>
+			 
+			 </div>
+		 </div>
+	 </section>
+	 
+	 <section id="section-3"> 
+		 <div class="container">
+		 	<div class="title-box">
+				 <h2>Get in touch</h2>
+				 <div class="line"></div>
+				 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+			</div>
+			<div id="contact-form">
+				<form>
+					<div class="form-row">
+						<input type='text' name="name" placeholder="Your Name">
+						<input type='email' name="email" placeholder="Your Email">
+					</div>
+					
+					<div class="form-row">
+						<textarea name="message" placeholder="Your Message"></textarea><!-- do not add any white space in code otherwise it will show up instead of placeholder text -->
+					    <!-- textarea is an input but it doesnt act the same was as the input -->
+					</div>
+					
+					<div class="form-row">
+						<input type="submit" class="big-button" value="Send message">
+					</div>
+				</form>
+			</div>
+		 </div>
+	 </section>
+	 
+	 <footer>
+		<div class="container">
+			<div class="footer-links">
+				<ul>
+			
+					<li><a href="https://www.instagram.com/patte.couture/">Instagram</a></li>
+					<li><a href="https://www.etsy.com/shop/pattecouture/">Etsy</a></li>
+					<li><a href="https://pinterest.com/pattecouture/">Pinterest</a></li>
+				</ul>
+			</div>
+		</div>
+	 </footer>
+
+	 <!--bug: when #main-icon toggled on on mobile, then toggled off, it disappears after screen goes back to desktop-->
+	 <script>
+		function toggleMenu() {
+			var x = document.getElementById("main-menu");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	 </script>
+
+
+</body>
+</html>
